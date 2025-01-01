@@ -33,10 +33,11 @@ const StarRating = ({ noOfStars = 5 }) => {
             onMouseLeave={() => handleLeave(index)}
             size={40}
           />
+          
         );
       })}
     </div>
   );
 };
 
-export default StarRating;
+export default StarRating; 
