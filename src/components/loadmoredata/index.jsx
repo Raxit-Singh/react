@@ -4,7 +4,7 @@ const LoadMoreData = () => {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0);
-  const[disableButton, setDisableButton] = useState(false)
+  const [disableButton, setDisableButton] = useState(false);
 
   async function fetchProducts() {
     try {
@@ -30,10 +30,11 @@ const LoadMoreData = () => {
     fetchProducts();
   }, [count]);
 
-  useEffect(()=> {
+  useEffect(() => {
     products.length === 100
-     ? setDisableButton(true): setDisableButton(false)
-  },[count])
+      ? setDisableButton(true)
+      : setDisableButton(false);
+  }, [products]);
 
   if (loading) {
     return <div>Loading</div>;
@@ -58,13 +59,17 @@ const LoadMoreData = () => {
           : null}
       </div>
       <button
-      disabled={disableButton}
+        disabled={disableButton}
         onClick={() => setCount(count + 1)}
         className="bg-gray-500 text-white flex justify-center items-center"
       >
         Load More
       </button>
-      {disableButton&& <div className="flex justify-center items-center text-white">U have reached the end</div> }
+      {disableButton && (
+        <div className="flex justify-center items-center text-white">
+          U have reached the end
+        </div>
+      )}
     </div>
   );
 };
