@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import QRCode from "react-qr-code";
 
 const QrCodeGenerator = () => {
@@ -11,7 +11,7 @@ const QrCodeGenerator = () => {
   }
 
   return (
-    <div className="bg-black flex flex-col justify-center items-center pt-6">
+    <div className="bg-black flex flex-col justify-center items-center pt-6 h-screen">
       <div className="pb-3">
         <input
           onChange={(e) => setInput(e.target.value)}
