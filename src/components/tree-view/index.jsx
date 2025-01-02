@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import MenuList from "./menu-list";
 
 const TreeView = ({ menu = [] }) => {

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import MenuList from "./menu-list";
 
 const MenuItem = ({ items }) => {
@@ -15,7 +16,7 @@ const MenuItem = ({ items }) => {
   return (
     <div className="ml-3 mb-8 w-[400px] pt-2 text-white">
         <div className="flex gap-5 items-center">
-      <p>{items.label}</p>
+      <p className="text-xl">{items.label}</p>
       {items && items.children && items.children.length ? (
         <span className="cursor-pointer text-2xl" onClick={() => handleDisplay(items.label)}>
           {displayCurrentChildren[items.label] ? "-" : "+"}

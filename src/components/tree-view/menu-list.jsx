@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-key */
+
 import MenuItem from "./menu-item";
 
 const MenuList = ({ list = [] }) => {
