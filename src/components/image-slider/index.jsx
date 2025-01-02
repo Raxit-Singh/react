@@ -52,6 +52,7 @@ const ImageSlider = ({ url, page, limit }) => {
   }
 
   return (
+    <div className="bg-black pt-4 pb-5">
     <div className="flex relative justify-center items-center h-[450px] w-[600px]">
       <BsArrowLeftCircleFill
         onClick={handlePrevious}
@@ -89,6 +90,7 @@ const ImageSlider = ({ url, page, limit }) => {
             ></button>
           ))}
       </span>
+    </div>
     </div>
   );
 };
