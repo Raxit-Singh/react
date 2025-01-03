@@ -1,6 +1,7 @@
 
 import Accordion from './components/accordion'
 import TabTest from './components/customtab/tab-test'
+import GithubProfileFinder from './components/githubprofile'
 import ImageSlider from './components/image-slider'
 import LightDarkMode from './components/light-dark-mode'
 import LoadMoreData from './components/loadmoredata'
@@ -28,6 +29,7 @@ function App() {
       <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
       <TabTest/>
       <PopupTest/>
+      <GithubProfileFinder/>
     </div>
    
   )
