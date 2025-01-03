@@ -4,6 +4,7 @@ import TabTest from './components/customtab/tab-test'
 import ImageSlider from './components/image-slider'
 import LightDarkMode from './components/light-dark-mode'
 import LoadMoreData from './components/loadmoredata'
+import PopupTest from './components/popup/popuptest'
 import QrCodeGenerator from './components/qrcodegenerator'
 import RandomColor from './components/randomcolor'
 import ScrollIndicator from './components/scrollindicator'
@@ -26,6 +27,7 @@ function App() {
       <LightDarkMode/>
       <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
       <TabTest/>
+      <PopupTest/>
     </div>
    
   )
